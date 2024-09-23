@@ -301,8 +301,23 @@ In a real server, you'd probably want to handle a ton of things that we're not d
 - Parsing the request query string and body
 - Parallelization (though maybe you could cheat this with GNU `parallel` and `SO_REUSEPORT`)
 
-<details>
-<summary>Final Server Code</summary>
+## Motivation
+
+So why go through all of this? I found this super cool library called [Chafa](https://hpjansson.org/chafa/) which lets you show images in your terminal (through a mix of ASCII art and various terminal image protocols), and I wanted to use it to build a "now playing" widget for Spotify.
+
+Spotify's API (like so many others) uses the OAuth flow if you want to get user data, and in this case, that's exactly what I need. One HTTP-server-rabbit-hole later, I finally have a [complete auth flow in my CLI](https://github.com/preyneyv/spotify-now-playing/blob/734edaf2dec78ad3a6980a04e72bdeeeb30eb5e1/src/spotify.c#L147-L242).
+
+You can see the source code for my transient server implementation [here](https://github.com/preyneyv/spotify-now-playing/blob/734edaf2dec78ad3a6980a04e72bdeeeb30eb5e1/src/http-server.c). I'm still super new to C, so consider yourself warned.
+
+## Resources
+
+- [MDN HTTP Messages](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages)
+- [HTTP/1.1 Specification (RFC 2616)](https://www.w3.org/Protocols/rfc2616/rfc2616.html)
+- [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/html/)
+
+## Appendix
+
+#### Final Server Code
 
 ```c
 #include <netinet/in.h>
@@ -382,19 +397,3 @@ cleanup_failure:
   return EXIT_FAILURE;
 }
 ```
-
-</details>
-
-## Motivation
-
-So why go through all of this? I found this super cool library called [Chafa](https://hpjansson.org/chafa/) which lets you show images in your terminal (through a mix of ASCII art and various terminal image protocols), and I wanted to use it to build a "now playing" widget for Spotify.
-
-Spotify's API (like so many others) uses the OAuth flow if you want to get user data, and in this case, that's exactly what I need. One HTTP-server-rabbit-hole later, I finally have a [complete auth flow in my CLI](https://github.com/preyneyv/spotify-now-playing/blob/734edaf2dec78ad3a6980a04e72bdeeeb30eb5e1/src/spotify.c#L147-L242).
-
-You can see the source code for my transient server implementation [here](https://github.com/preyneyv/spotify-now-playing/blob/734edaf2dec78ad3a6980a04e72bdeeeb30eb5e1/src/http-server.c). I'm still super new to C, so consider yourself warned.
-
-## Resources
-
-- [MDN HTTP Messages](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages)
-- [HTTP/1.1 Specification (RFC 2616)](https://www.w3.org/Protocols/rfc2616/rfc2616.html)
-- [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/html/)
