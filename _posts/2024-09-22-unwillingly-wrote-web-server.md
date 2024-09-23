@@ -118,7 +118,7 @@ Here's a sample POST request as you might receive from a web browser:
 
 You can grab one of these yourself by running a TCP server, then pointing a web browser to that port and looking at the received message. Here I'm using `nc` (the one that ships with macOS) to listen on port 1337.
 
-```console
+```
 preyneyv:~ $ nc -l 1337
 GET / HTTP/1.1
 Host: localhost:1337
@@ -171,7 +171,7 @@ And that's literally all we need to know to make an HTTP server. To prove it, le
 
 (I'm using `->` to indicate the request the browser sends, and `<-` to indicate what you should type into your terminal.)
 
-```console
+```
 preyneyv:~ $ nc -c -l 1337
 -> GET / HTTP/1.1
 -> Host: localhost:1337

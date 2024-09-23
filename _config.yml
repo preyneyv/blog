@@ -26,6 +26,10 @@ url: "https://blog.preyneyv.dev" # the base hostname & protocol for your site, e
 twitter_username: preyneyv
 github_username: preyneyv
 
+collections:
+  posts:
+    permalink: /:title
+
 # Build settings
 remote_theme: jekyll/minima
 plugins:
