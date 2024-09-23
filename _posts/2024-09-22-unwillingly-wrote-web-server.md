@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How I Unwillingly Wrote a Web Server
+title: HTTP/1.1 500 Segfault
+tags: http c oauth2
 ---
-
 It feels like [every](https://dev.twitch.tv/docs/authentication/) [single](https://developer.spotify.com/documentation/web-api/tutorials/code-pkce-flow) [web](https://discord.com/developers/docs/topics/oauth2) [service](https://developer.x.com/en/docs/authentication/overview) wants to use OAuth to get user data, and for good reason too. The alternatives include requiring users to create access tokens manually (yikes) and asking users to input their usernames/passwords to impersonate them (giga yikes). At least with OAuth, users get to see a pretty screen with a big "Approve" button.
 
 The OAuth spec defines [many different auth flows](https://auth0.com/docs/get-started/authentication-and-authorization-flow/which-oauth-2-0-flow-should-i-use), but I want to focus specifically on Authorization Code with Proof Key for Code Exchange, or PKCE for short. In summary, the steps for PKCE are:
