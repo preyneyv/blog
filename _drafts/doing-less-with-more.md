@@ -224,8 +224,8 @@ software seems to care very little about how it feels to use, because you'll use
 it anyway. That's a future I don't want.
 
 If you are a software developer, I encourage you to build things with precision
-and quality. I view software as an art, and I want to be able to appreciate its
-craftsmanship.
+and quality. Pay attention to the milliseconds. Appreciate the things you like
+to use. Take pride in your craftsmanship.
 
 Stop doing less with more.
 
