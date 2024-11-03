@@ -229,4 +229,8 @@ to use. Take pride in your craftsmanship.
 
 Stop doing less with more.
 
+
+
+[HN comments](https://news.ycombinator.com/item?id=42032693)
+
 ---
