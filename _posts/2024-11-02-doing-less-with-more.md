@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "I Waited For 10 Billion Cycles and All I Got Was This Loading Screen"
+title: "I Waited 10 Billion Cycles and All I Got Was This Loading Screen"
 tags: software-philosophy
 ---
 
@@ -99,7 +99,7 @@ _Note: I am using "Electron" as a stand-in for Electron, CEF, WKWebView, Edge
 WebView2 and any other web-to-native wrapper._
 
 [Electron][12] made it possible to make web applications and deploy them as
-desktop applications. The appeal of this is undeniable. Now you can hire a
+desktop applications. The appeal of this is undeniable. Now, you can hire a
 single skill set, build a single application a single time, then have "desktop"
 apps for every architecture and architecture and OS under the sun (yes, even
 Linux).
