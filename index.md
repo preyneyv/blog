@@ -2,4 +2,4 @@
 layout: home
 ---
 
-a place for me to share some of the cool things i've built.
+welcome to my corner of the internet where i ramble about technological musings.
