@@ -229,8 +229,11 @@ to use. Take pride in your craftsmanship.
 
 Stop doing less with more.
 
+---
 
+Discuss on [Hacker News][24] and [r/programming][25]
 
-[HN comments](https://news.ycombinator.com/item?id=42032693)
+[24]: https://news.ycombinator.com/item?id=42032693
+[25]: https://www.reddit.com/r/programming/comments/1gilzhk/i_waited_10_billion_cycles_and_all_i_got_was_this/
 
 ---
